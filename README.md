@@ -2,9 +2,10 @@
 
 ## Table of contents
 
-- [Make](#make)
-- [dotenv](#dotenv)
-  - [Overrides](#overrides)
+- [Base repo for services with make](#base-repo-for-services-with-make)
+	- [Make](#make)
+	- [dotenv](#dotenv)
+		- [Overrides](#overrides)
 
 ## Make
 
