@@ -16,9 +16,9 @@ include $(ENV_PATH)/.env
 VARS := $(filter-out $(SKIP_EXPORT_FOR),$(shell grep -shoP "^[^\#=]+(?==)(?!.*;)" $(ENV_PATH)/.env $(ENV_PATH)/.env.local))
 $(foreach v, $(VARS), $(eval $(shell echo export $(v) = "$($(v))")))
 
-ifneq ("${ENV}", "")
--include $(ENV_PATH)/.env.${ENV}
--include $(ENV_PATH)/.env.${ENV}.local
+ifneq ("$(ENV)", "")
+include $(ENV_PATH)/.env.$(ENV)
+-include $(ENV_PATH)/.env.$(ENV).local
 VARS := $(filter-out $(SKIP_EXPORT_FOR),$(shell grep -shoP "^[^\#=]+(?==)(?!.*;)" $(ENV_PATH)/.env.$(ENV) $(ENV_PATH)/.env.$(ENV).local))
 $(foreach v, $(VARS), $(eval $(shell echo export $(v) = "$($(v))")))
 endif
