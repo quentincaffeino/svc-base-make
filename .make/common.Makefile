@@ -5,7 +5,10 @@ QUIET ?= @
 ###< quiet ###
 
 ###> env ###
-## Path to the dotenv files [default: .]
+## Environment name (leave blank for dev, use prod for production and etc...) [default: ]
+ENV ?=
+
+## Path to the dotenv files [default:.]
 ENV_PATH ?= .
 
 ## List of variables to omit while exporting

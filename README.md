@@ -1,13 +1,15 @@
 # Base repo for services with make
 
+Make setup which makes use of per-environment dotenv files
+
 ## Table of contents
 
 - [Base repo for services with make](#base-repo-for-services-with-make)
-	- [Make](#make)
+	- [Usage](#usage)
 	- [dotenv](#dotenv)
 		- [Overrides](#overrides)
 
-## Make
+## Usage
 
 ```sh
 make help
