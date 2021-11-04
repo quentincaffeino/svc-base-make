@@ -5,9 +5,16 @@ Make setup which makes use of per-environment dotenv files
 ## Table of contents
 
 - [Base repo for services with make](#base-repo-for-services-with-make)
+	- [Prerequisites](#prerequisites)
 	- [Usage](#usage)
 	- [dotenv](#dotenv)
 		- [Overrides](#overrides)
+
+## Prerequisites
+
+- sh
+- make
+- perl
 
 ## Usage
 
